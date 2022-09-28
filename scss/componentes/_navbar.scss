@@ -4,22 +4,17 @@ $nav-txt-color: black;
 $nav-txt-color-hover: gray;
 $font-family-gral: monospace;
 $font-weight: 600;
-$font-size:larger;
+$font-size:larguer;
 $padding-left-brand:1.5em;
-$nav-bar-color:rgba(0, 0, 0, 0.55);
 .navbar-bg-original {
     background: $nav-bg-color;
-    padding: 0.5rem;
-    padding-left: 2em;
-
-    a {
-        text-decoration: none;
-        color: $nav-txt-color;
-        font-weight: $font-weight;
-        font-size: $font-size;
-        padding-left: $padding-left-brand;
+    a{
+        text-decoration:none;
+        color:$nav-txt-color;
+        font-weight:$font-weight;
+        font-size:$font-size;
+        padding-left:$padding-left-brand;
     }
-
     &:hover {
         color: $nav-txt-color-hover;
     }
@@ -32,16 +27,25 @@ $nav-bar-color:rgba(0, 0, 0, 0.55);
         color:$nav-txt-color;
     }
 }
+%dropdown{
+    border:none;
+    border-radius:initial;
+    animation-duration:3s;
+}
+@mixin dropdown($color){
+            @extend %dropdown;
+            background-color:$color;
 .offcanvas-body {
     color: $nav-txt-color;
     padding-left: 0;
 
     ul {
-        li {
+        @include dropdown(gray)
+        }
+
+        .li {
             a {
                 text-decoration: none;
-                color:$nav-bar-color;
-                font-weight:initial;
             }
         }
     }
