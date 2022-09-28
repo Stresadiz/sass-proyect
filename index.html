@@ -1,0 +1,195 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!--
+            INICIO DEL NAV
+    -->
+    <nav class="navbar navbar-bg-original">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-brand-txt navbar-brand-edited" href="index.html">
+                <img src="img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Moon Travel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end offcanvas-original" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Moon Travel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="viajes.html">Viajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="promos.html">Promos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="consultas.html">Consultas</a>
+                        </li>
+                        <li class="nav-item dropdown nav-item-dropdown-style">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-edit" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Nosotros
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-style animate__animated animate__fadeIn">
+                                <li><a class="dropdown-item" href="nosotros.html">Mision y Vision</a></li>
+                                <li><a class="dropdown-item" href="nosotros.htmls">Sugerencias</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="nosotros.html">Trabaja con nosotros</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Indique su destino" aria-label="Search">
+                        <button class="btn btn-outline-success btn-menu" type="search">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--
+            INICIO DEL MAIN
+    -->
+    <div class="container">
+        <h3 class="text-muted text-center text-spacing">Tu destino sonado</h3>
+        <h1 class="display-4 text-center text-spacing">Viaja con nosotros!</h1>
+        <div class="row justify-content-center">
+            <div class="card text-bg-dark-light mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://st4.depositphotos.com/1007566/25097/v/450/depositphotos_250978574-stock-illustration-happy-young-man-character.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body animate__animated animate__fadeInUp fadeInUp__element">
+                            <h5 class="card-title">Victor Cuesta</h5>
+                            <p class="card-text">"Mi experiencia en el viaje fue satisfactoria y el servicio ideal"</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-bg-dark-light mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://st2.depositphotos.com/1007566/12173/v/450/depositphotos_121731666-stock-illustration-businessman-executive-cartoon.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body animate__animated animate__fadeInUp fadeInUp__element">
+                            <h5 class="card-title">Anibal Moreno</h5>
+                            <p class="card-text">
+                                "Estupendo, muy recomendable!"
+                            </p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+            INICIO DEL FOOTER
+    -->
+    <div class="container-fluid" style="background: #0e2a47;">
+        <div class="row container footer-container">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="container">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-border"><h5>Legales</h5></li>
+                        <li class="list-group-item list-group-border">Terminos de Uso</li>
+                        <li class="list-group-item list-group-border">Politica de Privacidad</li>
+                        <li class="list-group-item list-group-border">Reclamos</li>
+                        <li class="list-group-item list-group-border">Copyright</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="container">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-border"><h5>Nosotros</h5></li>
+                        <li class="list-group-item list-group-border">Mision y vision</li>
+                        <li class="list-group-item list-group-border">Trabaja con nosotros</li>
+                        <li class="list-group-item list-group-border">Sugerencias</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="container">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-border"><h5>Redes Sociales</h5></li>
+                        <li class="list-group-item list-group-border">Instagram</li>
+                        <li class="list-group-item list-group-border">Facebook</li>
+                        <li class="list-group-item list-group-border">Twitter</li>
+                        <li class="list-group-item list-group-border">GitHub</li>
+                    </ul>
+                </div>
+            </div>
+            <!--
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="container">
+                        <div class="row g-2">
+                            <div class="col-6 div-border">
+                                <div class="p-3 bg-img-footer">
+                                    <div class="p-3 bg-img-footer">
+                                        <picture>
+                                            <source srcset="img/tw-icon.svg" type="image/svg+xml">
+                                            <img src="img/tw-icon.svg" class="img-fluid img-thumbnail" alt="...">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 bg-img-footer">
+                                    <div class="p-3 bg-img-footer">
+                                        <picture>
+                                            <source srcset="img/tw-icon.svg" type="image/svg+xml">
+                                            <img src="img/tw-icon.svg" class="img-fluid img-thumbnail" alt="...">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 bg-img-footer">
+                                    <div class="p-3 bg-img-footer">
+                                        <picture>
+                                            <source srcset="img/tw-icon.svg" type="image/svg+xml">
+                                            <img src="img/tw-icon.svg" class="img-fluid img-thumbnail" alt="...">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 bg-img-footer">
+                                    <div class="p-3 bg-img-footer">
+                                        <picture>
+                                            <source srcset="img/tw-icon.svg" type="image/svg+xml">
+                                            <img src="img/tw-icon.svg" class="img-fluid img-thumbnail" alt="...">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="container footer-bootom">
+                <p>© Moon Travel by <a class="footer-link" href="github.com/Stresadiz">Sebastian Luna</a>.</p>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

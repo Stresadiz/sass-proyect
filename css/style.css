@@ -1,0 +1,64 @@
+/*  Variables   */
+.navbar-bg-original {
+  background: rgb(226, 226, 226);
+  padding: 0.5rem;
+  padding-left: 2em;
+}
+.navbar-bg-original a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: larger;
+  padding-left: 1.5em;
+}
+.navbar-bg-original:hover {
+  color: gray;
+}
+
+.offcanvas-original {
+  background: rgb(226, 226, 226);
+}
+
+.offcanvas-header h5 {
+  color: black;
+}
+
+.offcanvas-body {
+  color: black;
+  padding-left: 0;
+}
+.offcanvas-body ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.55);
+  font-weight: initial;
+}
+
+.container h3 {
+  margin: 1em;
+}
+.container h1 {
+  margin: 1em;
+}
+.container .text-bg-dark-light {
+  background-color: #e9e9e9;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+.footer-container .list-group-border {
+  border: none;
+  background: none;
+  color: #6c757d;
+}
+.footer-container .list-group-border h5 {
+  color: white;
+}
+.footer-container .footer-bootom {
+  color: #747d6f;
+  margin-left: 2em;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+
+    .list-group-border {
+        border: none;
+        background: none;
+        color: #6c757d;
+
+        h5 {
+            color: white;
+        }
+    }
+
+    .footer-bootom {
+        color: #747d6f;
+        margin-left: 2em;
+    }
+}
