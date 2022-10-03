@@ -1,0 +1,18 @@
+﻿@mixin listas($decoration){
+    text-decoration:$decoration;
+}
+@mixin botones($decoration, $color, $bg-color, $bordes, $radio) {
+    text-decoration: $decoration;
+    color: $color;
+    background-color: $bg-color;
+    border:$bordes;
+    border-radius:$radio;
+}
+@mixin links($decoration, $nav-txt-color, $font-weight, $font-size, $padding-left-brand, $bg-color) {
+    text-decoration: $decoration;
+    color: $nav-txt-color;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    padding-left: $padding-left-brand;
+    background-color: $bg-color !important;
+}

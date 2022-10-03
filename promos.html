@@ -13,18 +13,23 @@
 </head>
 <body style="font-family: 'Poppins', sans-serif;">
     <!--
-            INICIO DEL NAV
+            Inicio del nav
     -->
     <nav class="navbar navbar-bg-original">
         <div class="container-fluid">
-            <a class="navbar-brand navbar-brand-txt navbar-brand-edited" href="index.html">
+            <!--
+                Titulo y logo
+            -->
+            <a class="navbar-brand navbar-brand-txt" href="#">
                 <img src="img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                 Moon Travel
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" 
-                    aria-controls="offcanvasNavbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!--
+                Offcanvas
+            -->
             <div class="offcanvas offcanvas-end offcanvas-original" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Moon Travel</h5>
@@ -67,46 +72,76 @@
     </nav>
 
     <!--
-            INICIO DEL MAIN
+            Inicio del main content
     -->
-    <div class="container">
-        <h3 class="text-muted text-center text-spacing">Tu destino sonado</h3>
-        <h1 class="display-4 text-center text-spacing">Viaja con nosotros!</h1>
-        <div class="row justify-content-center">
-            <div class="card text-bg-dark-light mb-3 card-style">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="https://st4.depositphotos.com/1007566/25097/v/450/depositphotos_250978574-stock-illustration-happy-young-man-character.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body animate__animated animate__fadeInUp fadeInUp__element">
-                            <h5 class="card-title">Victor Cuesta</h5>
-                            <p class="card-text">"Mi experiencia en el viaje fue satisfactoria y el servicio ideal"</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
+    <div class="container container-padding-bottom">
+        <h1 class="display-4 text-center text-spacing">Promociones</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 main-spacing">
+            <div class="col">
+                <div class="card h-100 text-bg-dark-light card-style">
+                    <img src="https://img.freepik.com/vector-gratis/hermosa-escena-torre-inclinada-pisa-mundialmente-famoso-simbolo-atraccion-turistica-italiana-puntos-referencia-arquitectura-internacional-disenan-postales-o-afiches-viajes-ilustracion-vectorial_1150-56537.jpg?w=2000" class="card-img-top" alt="...">
+                    <div class="card-body animate__animated animate__fadeInUp fadeInUp__element">
+                        <h5 class="card-title">Torre de Pisa</h5>
+                        <p class="card-text">Visita la torre inclinida de Pisa, en Pisa, Italia.</p>
+                        <a href="#" class="btn btn-style scrollspy-edit">+ Info</a>
                     </div>
                 </div>
             </div>
-            <div class="card text-bg-dark-light mb-3 card-style">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="https://st2.depositphotos.com/1007566/12173/v/450/depositphotos_121731666-stock-illustration-businessman-executive-cartoon.jpg" class="img-fluid rounded-start" alt="...">
+            <div class="col">
+                <div class="card h-100 text-bg-dark-light card-style">
+                    <img src="https://img.freepik.com/vector-premium/dibujado-mano-piramides-egipto_23-2147520125.jpg" class="card-img-top" alt="...">
+                    <div class="card-body animate__animated animate__fadeInUp fadeInUp__element">
+                        <h5 class="card-title">Piramides de Egipto</h5>
+                        <p class="card-text">Visita las famosas y milenarias piramides de Egipto, en Giza, Egipto.</p>
+                        <a href="#" class="btn btn-style scrollspy-edit">+ Info</a>
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body animate__animated animate__fadeInUp fadeInUp__element">
-                            <h5 class="card-title">Anibal Moreno</h5>
-                            <p class="card-text">
-                                "Estupendo, muy recomendable!"
-                            </p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-bg-dark-light  card-style">
+                    <img src="https://img.freepik.com/vector-premium/coliseo-romano-dibujos-animados_264840-243.jpg" class="card-img-top" alt="...">
+                    <div class="card-body animate__animated animate__fadeInUp fadeInUp__element">
+                        <h5 class="card-title">Coliseo Romano</h5>
+                        <p class="card-text">Recorre el coliseo de los gladiadores romanos y descubre su historia, en Roma, Italia.</p>
+
+                        <a href="#" class="btn btn-style scrollspy-edit">+ Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-bg-dark-light  card-style">
+                    <img src="https://img.freepik.com/vector-premium/isla-pascua-tambien-conocido-como-parque-nacional-rapa-nui-es-patrimonio-humanidad-ilustracion-concepto-chile_201904-530.jpg" class="card-img-top" alt="...">
+                    <div class="card-body animate__animated animate__fadeInUp fadeInUp__element">
+                        <h5 class="card-title">Rapa Nui</h5>
+                        <p class="card-text">Descubre la isla del oceano pacifico con mas tesoros ocultos, ubicada en Valparaiso, Chile.</p>
+                        <a href="#" class="btn btn-style scrollspy-edit">+ Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-bg-dark-light  card-style">
+                    <img src="https://img.freepik.com/vector-premium/icono-dibujos-animados-ilustracion-plana-torre-eiffel-paris_374761-194.jpg?w=2000" class="card-img-top" alt="...">
+                    <div class="card-body animate__animated animate__fadeInUp fadeInUp__element">
+                        <h5 class="card-title">Torre Eiffel</h5>
+                        <p class="card-text">Ubicada en la ciudad del amor, la estructura de hierro mas imponente de Europa, en Paris, Francia.</p>
+                        <a href="#" class="btn btn-style scrollspy-edit">+ Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-bg-dark-light  card-style">
+                    <img src="https://us.123rf.com/450wm/jemastock/jemastock1907/jemastock190728541/126546328-templo-japon%C3%A9s-en-dise%C3%B1o-gr%C3%A1fico-del-ejemplo-del-vector-del-paisaje-de-la-naturaleza.jpg?ver=6" class="card-img-top" alt="...">
+                    <div class="card-body animate__animated animate__fadeInUp fadeInUp__element">
+                        <h5 class="card-title">Parque Ueno</h5>
+                        <p class="card-text">Ven a conocer uno de los parques mas lindos del mundo, en Tokio, Japon.</p>
+                        <a href="#" class="btn btn-style scrollspy-edit">+ Info</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!--
-            INICIO DEL FOOTER
+            Inicio del footer
     -->
     <div class="container-fluid" style="background: #0e2a47;">
         <div class="row container footer-container">

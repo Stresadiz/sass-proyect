@@ -1,52 +1,22 @@
-/*  Variables   */
-$nav-bg-color: rgb(226 226 226 / 100%);
-$nav-txt-color: black;
-$nav-txt-color-hover: gray;
-$font-family-gral: monospace;
-$font-weight: 600;
-$font-size:larguer;
-$padding-left-brand:1.5em;
-.navbar-bg-original {
-    background: $nav-bg-color;
-    a{
-        text-decoration:none;
-        color:$nav-txt-color;
-        font-weight:$font-weight;
-        font-size:$font-size;
-        padding-left:$padding-left-brand;
+.navbar-brand-edited {
+    a {
+        @include links(none, black, initial, initial, 0.5em, rgb(226 226 226 / 100%));
     }
+
     &:hover {
         color: $nav-txt-color-hover;
     }
 }
-.offcanvas-original{
-    background:$nav-bg-color;
+.navbar-bg-original {
+    background: $nav-bg-color;
+    padding-left: $padding-left-brand;
+}
+.offcanvas-original {
+    background: $nav-bg-color;
+    padding-left: $padding-left-brand-canvas;
 }
 .offcanvas-header{
     h5{
         color:$nav-txt-color;
-    }
-}
-%dropdown{
-    border:none;
-    border-radius:initial;
-    animation-duration:3s;
-}
-@mixin dropdown($color){
-            @extend %dropdown;
-            background-color:$color;
-.offcanvas-body {
-    color: $nav-txt-color;
-    padding-left: 0;
-
-    ul {
-        @include dropdown(gray)
-        }
-
-        .li {
-            a {
-                text-decoration: none;
-            }
-        }
     }
 }
