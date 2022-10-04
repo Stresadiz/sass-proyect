@@ -12,11 +12,30 @@
     padding-left: $padding-left-brand;
 }
 .offcanvas-original {
-    background: $nav-bg-color;
+    background: $nav-offcanvas-bg-color;
     padding-left: $padding-left-brand-canvas;
 }
 .offcanvas-header{
     h5{
         color:$nav-txt-color;
     }
+}
+.dropdown-menu-style {
+    border-radius: 1.375rem;
+    margin-bottom:1em;
+}
+.dropdown-item-style {
+    color: initial;
+
+    &:hover {
+        color: initial;
+    }
+
+    &:active {
+        background-color: #198754;
+    }
+}
+.btn-menu {
+    border-color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.55);
 }

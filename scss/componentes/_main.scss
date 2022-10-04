@@ -1,3 +1,6 @@
+body{
+    background:$third-color;
+}
 .container {
     h3 {
         margin: 1em;
@@ -38,8 +41,20 @@
         }
     }
 .card-style {
-    background: rgb(255,255,255);
-    background: linear-gradient(35deg, rgba(255,255,255,1) 0%, rgba(243,243,174,1) 25%, rgba(255,237,0,1) 100%);
+    background: $card-bg;
+    color:white;
+}
+.img-edited {
+    border-radius: 6.375rem 6.375rem 6.375rem 0;
+}
+.card-body {
+    .card-text {
+        color: white;
+
+        small {
+            color: #adadef;
+        }
+    }
 }
 .main-spacing{
     padding-bottom:1.5em;
